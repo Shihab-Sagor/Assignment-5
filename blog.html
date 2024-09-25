@@ -33,12 +33,16 @@
  <h1 class="font-bold text-4xl ml-10"> Important FAQ <span class="font-bold rotate-180 text-6xl">?</span></h1>
 
 
- <div class="w-4/5 ml-10">
+ <div class=" ml-10">
   <details class="dropdown w-4/5">
-    <summary class="btn w-4/5 text-left m-1">What is the document object model(DOM)</summary>
-    <ul class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-      <li><a>Item 1</a></li>
-    </ul>
+    <summary class="btn w-full text-left m-1">What is the document object model(DOM)?</summary>
+    
+      <p class="bg-gray-300 p-1 rounded-md">The Document Object Model is a cross-platform and language-independent interface that treats an HTML or XML document as a tree structure wherein each node is an object representing a part of the document. The DOM represents a document with a logical tree</p>
+      <details class="dropdown w-4/5">
+        <summary class="btn w-full text-left m-1">?</summary>
+        
+          <p class="bg-gray-300 p-1 rounded-md">The Document Object Model is a cross-platform and language-independent interface that treats an HTML or XML document as a tree structure wherein each node is an object representing a part of the document. The DOM represents a document with a logical tree</p>
+      </details>
   </details>
  </div>
 
@@ -48,7 +52,7 @@
       <script>
 
         document.getElementById('home-page').addEventListener('click',function(){
-            window.location.href = './index.html'
+          window.location.href ='./index.html';
         })
       </script>
 </body>
