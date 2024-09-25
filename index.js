@@ -1,5 +1,5 @@
 document.getElementById('blog-page').addEventListener('click',function(){
-    window.location.href = './blog.html';
+    window.location.href = '.\/blog.html';
 })
 
 const donationTab = document.getElementById('donation-btn')
@@ -50,7 +50,7 @@ totalBalanceOfAcc.innerText = lessBalance;
 if( Number.isNaN(inputAmount) || inputAmount < 0 ){
     console.log('please enter the valid amount');
     alert('Invalid Donate amount')
-    document.getElementById('modal').classList.add('hidden')
+    document.getElementById('modal').classList.add('-z-index-1')
     addingField.innerText = addingAmount
 }
 
