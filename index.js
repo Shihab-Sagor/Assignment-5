@@ -32,9 +32,47 @@ if( Number.isNaN(inputAmount) || inputAmount < 0 ){
     console.log('please enter the valid amount');
     alert('Invalid Donate amount')
     document.getElementById('modal').classList.add('hidden')
+    addingField.innerText = addingAmount;
+    placeAmount == placeAmount;
+}
+});
+ document.getElementById('feni-btn').addEventListener('click',function(){
+const inputAmount = parseFloat(document.getElementById('feni-input').value);
+const placeAmount = parseFloat(document.getElementById('feni-place').innerText);
+const addingAmount = inputAmount + placeAmount;
+const addingField = document.getElementById('feni-place')
+addingField.innerText = addingAmount;
+const totalBalance = parseFloat(document.getElementById('total-balance').innerText);
+const lessBalance = totalBalance - inputAmount ;
+const totalBalanceOfAcc = document.getElementById('total-balance');
+totalBalanceOfAcc.innerText = lessBalance;  
+
+if( Number.isNaN(inputAmount) || inputAmount < 0 ){
+    console.log('please enter the valid amount');
+    alert('Invalid Donate amount')
+    document.getElementById('modal').classList.add('hidden')
     addingField.innerText = addingAmount
 }
 
-// alert('please enter a valid amount')
+ })
 
-})
+ document.getElementById('quata-btn').addEventListener('click',function(){
+    const inputAmount = parseFloat(document.getElementById('quata-input').value);
+    const placeAmount = parseFloat(document.getElementById('quata-place').innerText);
+    const addingAmount = inputAmount + placeAmount;
+    const addingField = document.getElementById('quata-place')
+    addingField.innerText = addingAmount;
+    const totalBalance = parseFloat(document.getElementById('total-balance').innerText);
+    const lessBalance = totalBalance - inputAmount ;
+    const totalBalanceOfAcc = document.getElementById('total-balance');
+    totalBalanceOfAcc.innerText = lessBalance;  
+    
+    if( Number.isNaN(inputAmount) || inputAmount < 0 ){
+        console.log('please enter the valid amount');
+        alert('Invalid Donate amount')
+        document.getElementById('modal').classList.add('hidden')
+        addingField.innerText = addingAmount
+    }
+    
+     })
+    
